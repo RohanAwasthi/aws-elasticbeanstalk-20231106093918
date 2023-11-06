@@ -1,0 +1,33 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test-copilot-app-test3"
+
+  links:
+    - url: https://github.com/RohanAwasthi/aws-elasticbeanstalk-20231106093918
+      title: "test-copilot-app-test3"
+      icon: code
+
+  labels:
+    system: web-apps
+    trackid: "aws-elasticbeanstalk-20231106093918"
+    environmentname: test-copilot-env-test3
+
+  tags:
+    - java
+    - aws
+    - "applicationtype-webapplication"
+
+  annotations:
+    # add elastic beanstalk annotation
+    jenkins.io/github-folder: 'custom-actions/tf-test-copilot-app-test3'
+    github.com/project-slug: RohanAwasthi/aws-elasticbeanstalk-20231106093918
+    backstage.io/techdocs-ref: dir:.
+    backstage.io/linguist: https://github.com/ItRachii/spring-boot-ebs
+    sonarqube.org/project-key: 'demo-app/aws-elb-java'
+
+spec:
+  type: service
+  lifecycle: experimental
+  system: elasticbeanstalk
+  owner: "group:default/ey"
